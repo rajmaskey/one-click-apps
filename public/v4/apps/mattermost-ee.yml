@@ -12,7 +12,7 @@ services:
         caproverExtra:
             notExposeAsWebApp: 'true'
     $$cap_appname:
-        image: mattermost/mattermost-enterprise-edition:$$cap_mattermost_version
+        image: nerzhul/mattermost-server-arm64
         depends_on:
             - $$cap_appname-db
         volumes:
